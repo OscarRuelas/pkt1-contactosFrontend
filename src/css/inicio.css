@@ -1,0 +1,123 @@
+header{
+    padding: 2rem;
+    box-shadow: 1px 10px 26px -5px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    width: 90rem;
+}
+
+.encabezado{
+    display: flex;
+}
+
+.buscar{
+    width: 30rem;
+}
+
+.btnBuscar{
+    width: 5rem;
+}
+
+.ncontacto{
+    width: 15rem;
+}
+
+.ncontacto:hover{
+    background-color: #2BAE66;
+    transition: background-color 1s;
+    border: #2BAE66;
+}
+
+.tabla{
+    padding: 2rem;
+    width: 70rem;
+    margin: 150px auto;
+    box-shadow: 1px 10px 26px -5px rgba(0,0,0,0.75);
+
+}
+
+.acciones{
+    display: flex;
+    gap: 1rem;
+}
+
+
+@media (max-width:576px) {
+    header{
+        width: 70rem;
+    }
+}
+
+@media (max-width:320px) {
+    header{
+        width: 70rem;
+    }
+}
+
+.formulario{
+    margin: 150px auto;
+    padding: 2rem;
+    width: 1100px;
+    box-shadow: 1px 10px 26px -5px rgba(0,0,0,0.75);
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.form-floating{
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.acciones{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    background-color: #0897ff;
+    color: white;
+}
+
+.guardar{
+    width: 8rem;
+}
+
+.guardar:hover{
+    background-color: #2BAE66;
+    transition: background-color 1s;
+}
+
+.cancelar{
+    width: 8rem;
+    display: flex;
+}
+
+.cancelar:hover{
+    background-color: #e3172e;
+    transition: background-color 1s;
+}
+
+/* validaciones */
+
+.iconoForm{
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: 18rem;
+}
+
+.form-floating-correcto .form-floating-estatus{
+    color:#1ed12d;
+    opacity: 1;
+}
+
+.form-floating-incorrecto .form-floating-estatus{
+    color:#bb2929;
+    opacity: 1;
+    border: 3px solid #bb2929;
+}
